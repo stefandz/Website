@@ -1,0 +1,21 @@
+// Layout
+// ======
+
+html, body { width: 100%; height: 100%; }
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+body { background-color: @tangerine; }
+
+// Utils
+// =====
+.pointer { cursor: pointer; }
+.center { margin: 0 auto; }
+.constrain-width { max-width: 600px; }
+.spacer-v { width: 100%; height: 130px; }
+
+// Embeding
+// --------
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

@@ -1,0 +1,29 @@
+{
+  "name": "hackneyswingers-server",
+  "version": "1.0.0",
+  "description": "Server for http://hackneyswingers.club",
+  "private": true,
+  "main": "app.hackneyswingers-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rc1",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.3",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-babel": "^5.0.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-less": "^3.0.1",
+    "gulp-livereload": "^3.8.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-uglify": "^1.1.0",
+    "jade": "^1.9.2",
+    "markdown": "^0.5.0",
+    "serve-static": "^1.9.2",
+    "superagent": "^1.1.0",
+    "w-js": "^4.39.0"
+  }
+}
