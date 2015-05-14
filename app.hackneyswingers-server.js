@@ -27,7 +27,7 @@ var init = W.composePromisers( makeExpressApp,
 var options = { port: process.env.PORT || 10001,
                 isLocal: W.isUndefined( process.env.IS_LOCAL ) ? false : process.env.IS_LOCAL };
 
-init( options, ( app ) => report( 'OK', 'Server created' ) );
+init( options, function ( app ) { report( 'OK', 'Server created' ); } );
 
 // Express
 // =======
@@ -57,7 +57,9 @@ function makeExpressApp ( app ) {
 
         // Router
         // ------
-        app.expressApp.get( '/', ( req, res ) => res.render( 'home', makeJadeData( app ) ) );
+        app.expressApp.get( '/', function ( req, res ) {
+            res.render( 'home', makeJadeData( app ) );
+        });
 
         resolve( app );
     });
